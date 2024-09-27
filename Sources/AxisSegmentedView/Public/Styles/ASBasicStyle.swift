@@ -63,10 +63,10 @@ public struct ASBasicStyle: View {
     public var body: some View {
         ZStack(alignment: .topLeading) {
             RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(backgroundColor.opacity(0.2))
+                .fill(backgroundColor.opacity(1.0))
                 .overlay(
                     RoundedRectangle(cornerRadius: cornerRadius)
-                        .stroke(lineWidth: 1)
+                        .stroke(lineWidth: 0)
                         .fill(foregroundColor)
                 )
                 .padding(0.5)
